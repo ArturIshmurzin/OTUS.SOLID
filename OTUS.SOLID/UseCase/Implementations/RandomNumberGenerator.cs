@@ -4,7 +4,7 @@ namespace OTUS.SOLID.UseCase.Implementations
 {
     public class RandomNumberGenerator : INumberGenerator
     {
-        public int GetNumber(int min, int max)
+        public virtual int GetNumber(int min, int max)
         {
             return new Random().Next(min, max);
         }

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace OTUS.SOLID.UseCase.Implementations
 {
-    public class RandomEvenNumberGenerate : INumberGenerator
+    public class RandomEvenNumberGenerate : RandomNumberGenerator
     {
-        public int GetNumber(int min, int max)
+        public override int GetNumber(int min, int max)
         {
             return new Random().Next(min / 2, max / 2) * 2;
         }
